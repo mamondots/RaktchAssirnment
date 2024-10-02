@@ -7,7 +7,7 @@ const FeaturedTour = () => {
         <p className="text-[#4DA528] font-semibold py-2">Explore the world</p>
         <h2 className="lg:text-4xl lg:w-2/4  md:text-4xl text-2xl font-semibold text-[#262626] capitalize">
           Amazing Featured Tour{" "}
-          <span className="text-[#4DA528] leading-[3rem] ">Package</span> the
+          <span className="text-[#4DA528] leading-[3rem]">Package</span> the
           world
         </h2>
       </div>

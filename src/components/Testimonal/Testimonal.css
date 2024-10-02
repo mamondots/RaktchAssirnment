@@ -1,0 +1,7 @@
+.backImg {
+  background-image: url("../../assets/mask-home4.ad5598a6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
