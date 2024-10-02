@@ -1,5 +1,6 @@
 import About from "@/components/About/About";
 import Banner from "@/components/Banner/Banner";
+import Blogs from "@/components/Blogs/Blogs";
 import FeaturedTour from "@/components/FeaturedTour/FeaturedTour";
 import FindLacation from "@/components/FindLacation/FindLacation";
 import HowWorks from "@/components/HowWorks/HowWorks";
@@ -16,6 +17,7 @@ export default function Home() {
       <HowWorks></HowWorks>
       <NearBy></NearBy>
       <Testimonal></Testimonal>
+      <Blogs></Blogs>
     </div>
   );
 }
