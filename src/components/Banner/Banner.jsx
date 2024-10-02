@@ -19,7 +19,7 @@ const Banner = () => {
 
   console.log(bannerData);
   return (
-    <div className="lg:px-28 md:px-20 sm:px-18 px-12 py-6">
+    <div className="overflow-hidden">
       <Slider {...settings}>
         {bannerData.map((data) => (
           <div key={data.id}>
@@ -27,7 +27,7 @@ const Banner = () => {
               <div className="z-10 ">
                 <Image
                   src={data.img}
-                  alt="logo"
+                  alt="baner"
                   layout="fill"
                   objectFit="cover"
                 ></Image>

@@ -1,0 +1,16 @@
+.bannerId {
+  background-image: url("../../../assets/tour.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.bannerId::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: #26262698;
+  width: 100%;
+  height: 100%;
+}

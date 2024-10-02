@@ -8,14 +8,19 @@ import Image from "next/image";
 import { VscWorkspaceUntrusted } from "react-icons/vsc";
 import { FaSwatchbook } from "react-icons/fa";
 import { SiSemaphoreci } from "react-icons/si";
+import Link from "next/link";
+import { IoMdPlay } from "react-icons/io";
 
 const About = () => {
   return (
     <div className="lg:px-20 md:px-20 sm:px-18 px-12 py-6">
       <div className="grid lg:grid-cols-2 lg:gap-16 md:gap-14 gap-8">
         <div className="relative">
-          <div>
+          <div className="relative">
             <Image src={firstImg} alt="logo" width={700} height={700}></Image>
+            <div className="w-[80px] h-[80px] absolute top-[25%] left-[50%] bg-[#4DA528] rounded-full flex items-center justify-center text-[#fff] text-2xl cursor-pointer hover:bg-[#FBAD17] duration-300 z-10">
+              <IoMdPlay />
+            </div>
           </div>
           <div className="absolute z-50 bottom-12 right-0">
             <Image src={secondImg} alt="logo" width={250} height={250}></Image>
@@ -61,9 +66,11 @@ const About = () => {
           </div>
 
           <div className="lg:flex md:flex items-center gap-8">
-            <button className="px-8 py-4 tracking-wider uppercase rounded font-semibold  bg-[#4DA528] text-[#fff] hover:bg-[#FBAD17] cursor-pointer duration-300">
-              <span>More about us</span>
-            </button>
+            <Link href="/about">
+              <button className="px-8 py-4 tracking-wider uppercase rounded font-semibold  bg-[#4DA528] text-[#fff] hover:bg-[#FBAD17] cursor-pointer duration-300">
+                <span>More about us</span>
+              </button>
+            </Link>
 
             <div className="flex items-center  gap-2 my-8">
               <div className="rounded-full">

@@ -69,6 +69,12 @@ const Blogs = () => {
           </div>
         ))}
       </div>
+
+      <div className="flex items-center justify-center pb-12">
+        <button className="px-8 py-4 tracking-wider uppercase rounded font-semibold  bg-[#4DA528] text-[#fff] hover:bg-[#FBAD17] cursor-pointer duration-300">
+          View all blogs
+        </button>
+      </div>
     </div>
   );
 };

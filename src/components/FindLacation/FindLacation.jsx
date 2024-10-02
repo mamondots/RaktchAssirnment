@@ -4,16 +4,16 @@ import { FaPeopleLine } from "react-icons/fa6";
 
 const FindLacation = () => {
   return (
-    <div className="lg:px-48 md:px-20 sm:px-18 px-12 pb-12">
-      <div className="bg-[#fff] rounded px-8 border py-12">
+    <div className="lg:px-48 md:px-20 sm:px-18  pb-12 lg:mt-[-100px] relative z-50">
+      <div className="bg-[#4DA528] rounded px-8 border py-4">
         <form>
-          <div className="grid lg:grid-cols-4 gap-2">
+          <div className="grid lg:grid-cols-3 gap-2">
             <div className="flex flex-col gap-1">
               <label className="flex items-center gap-1 text-md font-medium">
-                <span className="text-[#4DA528]">
+                <span className="text-[#fff]">
                   <ImLocation />
                 </span>
-                <span className="text-[#5e5e5e]">Destination</span>
+                <span className="text-[#f7f7f7]">Destination</span>
               </label>
               <select className="border border-[#4da52836] px-4 py-2 outline-none rounded">
                 <option value="">Melborn-Australia</option>
@@ -26,10 +26,10 @@ const FindLacation = () => {
 
             <div className="flex flex-col gap-1">
               <label className="flex items-center gap-1 text-md font-medium">
-                <span className="text-[#4DA528]">
+                <span className="text-[#fff]">
                   <IoIosTimer />
                 </span>
-                <span className="text-[#5e5e5e]">Durating</span>
+                <span className="text-[#fff]">Durating</span>
               </label>
               <select className="border border-[#4da52836] px-4 py-2 outline-none rounded">
                 <option value="">2-4 days tour</option>
@@ -42,10 +42,10 @@ const FindLacation = () => {
 
             <div className="flex flex-col gap-1">
               <label className="flex items-center gap-1 text-md font-medium">
-                <span className="text-[#4DA528]">
+                <span className="text-[#fff]">
                   <FaPeopleLine />
                 </span>
-                <span className="text-[#5e5e5e]">Type</span>
+                <span className="text-[#fff]">Type</span>
               </label>
               <select className="border border-[#4da52836] px-4 py-2 outline-none rounded">
                 <option value="">Group-tour</option>
@@ -54,14 +54,13 @@ const FindLacation = () => {
                 <option value="">Official-tour</option>
               </select>
             </div>
-
-            <div className="flex flex-col gap-1">
-              <input
-                className="py-2 px-4 text-center"
-                type="submit"
-                value="Find Lacation"
-              />
-            </div>
+          </div>
+          <div className="flex flex-col gap-1 w-full mt-2 rounded">
+            <input
+              className="py-2 px-4 rounded text-center bg-[#fff] hover:bg-[#FBAD17] cursor-pointer duration-300 hover:text-[#fff] w-full"
+              type="submit"
+              value="Find Lacation"
+            />
           </div>
         </form>
       </div>

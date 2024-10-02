@@ -11,24 +11,46 @@ const Navbar = () => {
   return (
     <div className="lg:px-28 md:px-20 sm:px-18 px-12 py-6">
       <div className="flex justify-between items-center gap-8">
-        <div>
-          <Image
-            src="https://i.ibb.co.com/qg0FYBt/rektic-Logo.png"
-            alt="logo"
-            width="30"
-            height="30"
-          ></Image>
-        </div>
+        <Link href="/">
+          <div>
+            <Image
+              src="https://i.ibb.co.com/qg0FYBt/rektic-Logo.png"
+              alt="logo"
+              width="30"
+              height="30"
+            ></Image>
+          </div>
+        </Link>
 
         <div className="lg:flex hidden justify-center items-center gap-8">
-          <Link href={""}>Home</Link>
-          <Link href={""}>Tours</Link>
-          <Link href={""}>About Us</Link>
-          <Link href={""}>Contact Us</Link>
+          <Link
+            className="font-semibold hover:text-[#4DA528] duration-300"
+            href="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="font-semibold hover:text-[#4DA528] duration-300"
+            href="/tour"
+          >
+            Tours
+          </Link>
+          <Link
+            className="font-semibold hover:text-[#4DA528] duration-300"
+            href="/about"
+          >
+            About Us
+          </Link>
+          <Link
+            className="font-semibold hover:text-[#4DA528] duration-300"
+            href="/contact"
+          >
+            Contact Us
+          </Link>
           <div>
             <Link
               href={""}
-              className="px-6 py-3 bg-[#4DA528] text-[#fff] rounded"
+              className="px-6 py-3 bg-[#4DA528] cursor-pointer hover:bg-[#FBAD17] duration-300 text-[#fff] rounded"
             >
               Login Now
             </Link>
@@ -73,14 +95,14 @@ const Navbar = () => {
             </div>
 
             <div className="flex flex-col gap-8 text-[#fff]">
-              <Link href={""}>Home</Link>
-              <Link href={""}>Tours</Link>
-              <Link href={""}>About Us</Link>
-              <Link href={""}>Contact Us</Link>
+              <Link href="/">Home</Link>
+              <Link href="/tour">Tours</Link>
+              <Link href="/about">About Us</Link>
+              <Link href="/contact">Contact Us</Link>
               <div>
                 <Link
                   href={""}
-                  className="px-6 py-3 bg-[#4DA528] text-[#fff] rounded"
+                  className="px-6 py-3 bg-[#4DA528] cursor-pointer hover:bg-[#FBAD17] duration-300 text-[#fff] rounded"
                 >
                   Login Now
                 </Link>

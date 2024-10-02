@@ -1,3 +1,4 @@
+import Link from "next/link";
 import TourCard from "../UI/TourCard/TourCard";
 
 const FeaturedTour = () => {
@@ -19,9 +20,11 @@ const FeaturedTour = () => {
         <TourCard></TourCard>
       </div>
       <div className="flex items-center justify-center">
-        <button className="px-8 py-4 tracking-wider uppercase rounded font-semibold  bg-[#4DA528] text-[#fff] hover:bg-[#FBAD17] cursor-pointer duration-300">
-          View all tour
-        </button>
+        <Link href="/tour">
+          <button className="px-8 py-4 tracking-wider uppercase rounded font-semibold  bg-[#4DA528] text-[#fff] hover:bg-[#FBAD17] cursor-pointer duration-300">
+            View all tour
+          </button>
+        </Link>
       </div>
     </div>
   );
