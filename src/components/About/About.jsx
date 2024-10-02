@@ -28,7 +28,7 @@ const About = () => {
           <p className="text-[#4DA528] font-semibold py-2">Explore the world</p>
           <h2 className="lg:text-4xl  md:text-4xl text-2xl font-semibold text-[#262626] capitalize">
             Great opportunity for{" "}
-            <span className="text-[#4DA528] ">adventure</span> & travels
+            <span className="text-[#4DA528]">adventure</span> & travels
           </h2>
           <p className="py-4 text-[#616161] ">
             Welcome to our softwear website! We are a professional and reliable
